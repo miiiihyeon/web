@@ -4,9 +4,8 @@
     <title>WEB - CSS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <input type="button" value="night" onclick="
+    <script>
+         function nightDayHandler(){
     var target= document.querySelector('body')
     if (this.value === 'night'){
         target.style.backgroundColor='black';
@@ -30,7 +29,12 @@ while(i < alist.length){
     console.log(alist[i]);
     alist[i].style.color='blue';
     i= i +1;}}
-    ">
+}
+    </script>
+</head>
+<body>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler();">
 <h1><a href="index.html">WEB</a></h1>
 <ol>
     <li><a href="1.html" class="saw">HTML</a></li>
