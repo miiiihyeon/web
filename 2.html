@@ -3,38 +3,15 @@
 <head>
     <title>WEB - CSS</title>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script>
-         function nightDayHandler(){
-    var target= document.querySelector('body')
-    if (this.value === 'night'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        this.value ='day';
-        var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-    console.log(alist[i]);
-    alist[i].style.color='powderblue';
-    i= i +1;}
-} 
-    else{  
-    target.style.backgroundColor='white';
-       target.style.color='black';
-        this.value ='night';  
-        var alist = document.querySelectorAll('a');
+    <script src="colors.js">
         
-var i = 0;
-while(i < alist.length){
-    console.log(alist[i]);
-    alist[i].style.color='blue';
-    i= i +1;}}
-}
     </script>
 </head>
 <body>
     <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler();">
+    nightDayHandler(this);">
 <h1><a href="index.html">WEB</a></h1>
 <ol>
     <li><a href="1.html" class="saw">HTML</a></li>
